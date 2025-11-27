@@ -34,7 +34,6 @@ import Teacher from './component/Teacher';
 //   { image: "/Sandiya.png", video: "/about/kid-1.mp4", name: "Vidhya Sree" },
 // ];
 
-<<<<<<< HEAD
 const leftOfferings = [
   {
     title: "Academy Run Programs / Courses",
@@ -70,77 +69,6 @@ const rightOfferings = [
     description: "Collaborative initiatives with universities and industry experts to co-develop, test, and continuously evolve the STEPS Robotics platform.",
   }
 ];
-=======
-// const leftOfferings = [
-//   {
-//     title: "STEM Education Programs",
-//     icon: "/icons/stem.png",
-//     description: "Structured curriculum designed for progressive learning from basics to advanced.",
-//   },
-//   {
-//     title: "School/College Workshops",
-//     icon: "/icons/school.png",
-//     description: "One-day to multi-day hands-on events hosted at your campus.",
-//   },
-//   {
-//     title: "Robotics Lab Setup",
-//     icon: "/icons/lab.png",
-//     description: "Complete design, setup, and training for robotics labs in institutions.",
-//   }
-// ];
-
-// const rightOfferings = [
-//   {
-//     title: "Robotics\nCompetitions",
-//     icon: "/icons/robotics.png",
-//     description: "Test skills in real-world scenarios.\nJoin national-level competitions with training, support.",
-//   },
-//   {
-//     title: "Competition\nCoaching",
-//     icon: "/icons/competition.png",
-//     description: "Customized mentoring for WRO,\nFIRST, and national STEM events.",
-//   },
-//   {
-//     title: "CSR & Corporate\nSTEM Programs",
-//     icon: "/icons/CSR.png",
-//     description: "Partner with us to bring STEM\nlearning to underserved communities.",
-//   }
-// ];
-
-// const features = [
-//   {
-//     icon: "/icons/1.png",
-//     title: "Holistic 360° Skill",
-//     subtitle: "Development",
-//   },
-//   {
-//     icon: "/icons/2.png",
-//     title: "48+ Hours of",
-//     subtitle: "Structured Learning",
-//   },
-//   {
-//     icon: "/icons/3.png",
-//     title: "Progressive",
-//     subtitle: "Learning Path",
-//   },
-//   {
-//     icon: "/icons/4.png",
-//     title: "Customized &",
-//     subtitle: "Guided Training",
-//   },
-//   {
-//     icon: "/icons/5.png",
-//     title: "Experienced",
-//     subtitle: "Industry Mentors",
-//   },
-//   {
-//     icon: "/icons/6.png",
-//     title: "Flexible Learning",
-//     subtitle: "Modes",
-//   },
-// ];
-
->>>>>>> 8b589204ac539bf5fa536676fa0929edbabe655d
 
 
 export default function Home() {
