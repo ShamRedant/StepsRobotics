@@ -1,0 +1,40 @@
+.steps-apart-title{
+    color: #191919;
+  font-family: var(--font-poppins);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; 
+}
+.steps-apart-box{
+    border-radius: 15px;
+border: 1px dashed #848484;
+background: #FFF;
+box-shadow: 0 4px 4px 0 rgba(223, 223, 223, 0.25);
+}
+
+.steps-apart-point-title{
+    color: #030303;
+  font-family: var(--font-oxanium);
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 25.2px */
+}
+
+.steps-apart-point{
+ color: #000;
+  font-family: var(--font-poppins);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 21px */
+}
+.empower{
+      background: url('/empower.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto !important;
+  width: 100%;
+}
