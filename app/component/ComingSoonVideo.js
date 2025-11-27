@@ -42,7 +42,7 @@ export default function ComingSoonVideo() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                WE'RE BUILDING SOMETHING EXCITING
+                WE&apos;RE BUILDING SOMETHING EXCITING
               </motion.p>
 
               <motion.h1

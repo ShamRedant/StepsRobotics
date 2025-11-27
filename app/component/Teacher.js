@@ -44,7 +44,7 @@ export default function Teacher() {
               </p>
 
               <p className="sub-title leading-relaxed">
-                Whether it's coding a robot, solving real-world challenges, or
+                Whether it&apos;s coding a robot, solving real-world challenges, or
                 fostering teamwork, our educators ensure that every learner
                 experiences future-ready education that blends fun with deep
                 learning.
