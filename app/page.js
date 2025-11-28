@@ -330,7 +330,8 @@ export default function Home() {
             </div>
 <div className="flex robot_center_image justify-center items-center">
   <div className="relative">
-    <div className="relative w-100 h-100 md:w-110 md:h-110">
+    <div className="relative w-100 h-100 md:w-110 ml-[30px] md:ml-0
+ md:h-110">
       <Image
         src={robot}
         alt={data.main?.title || "STEPS Robot"}
