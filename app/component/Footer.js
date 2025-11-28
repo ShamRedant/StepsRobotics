@@ -239,42 +239,48 @@ export default function Footer() {
         </button>
       </div>
 
-      <div className="w-full mt-20 flex flex-col sm:flex-row text-sm relative z-10">
+<div className="w-full mt-20 flex flex-col sm:flex-row text-sm relative z-10">
 
-        <div className="bg-[#FFD700] sm:w-[40%] w-full flex justify-center items-center h-10 sm:h-8">
-          <div className="flex space-x-2 text-black">
-            <a href="#" className="hover:underline footer-bottom-text">
-              Privacy Policy
-            </a>
-            <span>|</span>
-            <a href="#" className="hover:underline footer-bottom-text">
-              Terms of Use
-            </a>
-          </div>
-        </div>
-
-        <div
-          className="
-                  bg-black  
-                  sm:w-[64%] w-full 
-                  flex flex-col sm:flex-row 
-                  justify-center sm:justify-between 
-                  items-center text-white 
-                  px-3 sm:px-4 
-                  h-auto py-2 sm:h-8 
-                  sm:-ml-[30px]
-                  text-center
-                  sm:[clip-path:polygon(30px_0,100%_0,100%_100%,0_100%)]
-                "
-        >
-          <p className="text-xs sm:text-sm leading-tight sm:pl-20">
-            Copyright STEPS Robotics 2025. All rights reserved.
-          </p>
-          <p className="text-xs sm:text-sm leading-tight mt-1 sm:mt-0">
-            Powered by: <span className="font-medium">Redant Labs</span>
-          </p>
-        </div>
+  <div className="bg-[#FFD700] sm:w-[40%] w-full flex justify-end items-center h-10 sm:h-8">
+<div className="w-full max-w-[1180px] flex justify-center items-center text-center px-4">
+      <div className="flex space-x-2 text-black">
+        <a href="#" className="hover:underline text-black font-poppins text-[12px] font-normal leading-normal">
+          Privacy Policy
+        </a>
+        <span>|</span>
+        <a href="#" className="hover:underline text-black font-poppins text-[12px] font-normal leading-normal">
+          Terms of Use
+        </a>
       </div>
+    </div>
+  </div>
+
+<div className="bg-black sm:w-[64%] w-full flex justify-start items-center h-auto py-2 sm:h-8 sm:-ml-[30px] sm:[clip-path:polygon(30px_0,100%_0,100%_100%,0_100%)]">
+  <div className="w-full max-w-[1180px] flex flex-col sm:flex-row justify-start items-center text-white px-4 sm:pl-[70px] text-center sm:text-left">
+    
+    <p className="text-white font-poppins text-[12px] font-normal leading-normal">
+      Copyright STEPS Robotics 2025. All rights reserved.
+    </p>
+<p className="
+  text-white font-poppins text-[12px] font-normal leading-normal
+  mt-1
+  sm:mt-0
+  sm:ml-[120px]
+  md:ml-[220px]
+  lg:ml-[306px]
+">
+  Powered by: <span>Redant Labs</span>
+</p>
+
+
+  </div>
+</div>
+
+
+
+</div>
+
+
     </footer>
   );
 }
