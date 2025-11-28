@@ -1111,7 +1111,7 @@ button {
 }
 
 .banner-text p {
-  font-size: 16px !important;
+  font-size: 20px !important;
   font-weight: 400;
 }
 
@@ -1207,7 +1207,7 @@ button {
     font-size: 16px !important;
   }
   .banner-text p {
-    font-size: 18px;
+    font-size: 18px !important;
   }
 
   /* .info_card {
@@ -1223,6 +1223,9 @@ button {
 
   .kids_build {
     margin-top: 90px;
+  }
+   .banner-text p {
+    font-size: 14px !important;
   }
 }
 
@@ -2136,8 +2139,6 @@ button {
 .rounded_image {
   border-radius: 6%;
 }
-
-
 
 .steps_robotics_child_h3 {
   color: var(--Black, #1A202C);
