@@ -308,7 +308,7 @@ export default function Home() {
                   {left[1]?.description}
                 </p>
               </div>
-              <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
+              <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px] mt-[23px]">
                 <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <h3 className="text-base steps_robotics_child_h3 md:text-lg text-font-poppins break-words text-start flex-1">
                     {left[2]?.heading}
