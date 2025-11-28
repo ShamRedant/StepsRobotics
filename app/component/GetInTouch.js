@@ -97,7 +97,7 @@ export default function GetInTouch() {
                 </p>
 
                 <div className="space-y-6">
-                  <div className="grid sm:grid-cols-2 gap-4 !mb-[5px]">
+                  <div className="grid sm:grid-cols-2 gap-4 mt-[20px] !mb-[5px]">
                     <div className="relative -mb-[15px]">
                       <input
                         type="text"
