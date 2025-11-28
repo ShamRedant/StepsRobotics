@@ -98,7 +98,7 @@ export default function GetInTouch() {
 
                 <div className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4 !mb-[5px]">
-                    <div className="relative mt-6 -mb-[15px]">
+                    <div className="relative -mb-[15px]">
                       <input
                         type="text"
                         name="firstName"
