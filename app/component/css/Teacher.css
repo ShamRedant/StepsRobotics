@@ -29,6 +29,11 @@ line-height: 150%;
   height: auto !important;
   width: 100%;
 }
-.teacher-special-box{
-    
+@media (min-width: 1130px) and (max-width: 1319px) {
+    .teacher-description{
+        font-size: 13px !important;
+    }
+    .teacher-image-contain{
+        height: 488px !important;
+    }
 }

@@ -142,9 +142,7 @@ export default function HeroSlider() {
 
 
   return (
-    <section className="relative container-spacing banner_h  h-[600px] md:h-[550px]">
-      {/* Slider */}
-
+    <section id="hero" className="relative container-spacing banner_h  h-[600px] md:h-[550px]">
       {banners.length > 0 && (
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div

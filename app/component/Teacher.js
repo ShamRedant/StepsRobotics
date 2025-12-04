@@ -23,7 +23,7 @@ export default function Teacher() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-[33%_67%] gap-8 lg:gap-12 items-center">
           <div className="flex justify-center lg:justify-start order-2 md:order-1">
-            <div className="relative w-full max-w-md h-[500px]">
+            <div className="relative w-full teacher-image-contain max-w-md h-[500px]">
               <Image
                 src="/teacher.png"
                 alt="Teacher with robot"

@@ -4071,3 +4071,20 @@ li {
   
 }
 
+@media (min-width: 1130px) and (max-width: 1319px) {
+    .banner-text h1, .every{
+        font-size: 42px !important;
+    }
+}
+
+@media (min-width: 788px) and (max-width: 990px) {
+  .banner-text h1, .every{
+        font-size: 25px !important;
+    }
+    .every-description {
+      font-size: 14px !important;
+    }
+    .banner-text p{
+            font-size: 14px !important;
+    }
+}
