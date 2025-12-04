@@ -67,7 +67,7 @@ export default function Carousel() {
   if (loading) return <SkeletonHero />;
 
   return (
-    <section className="relative container-spacing banner_h h-[450px] sm:h-[500px] md:h-[550px] lg:h-[600px]">
+    <section id="herosection" className="relative container-spacing banner_h h-[450px] sm:h-[500px] md:h-[550px] lg:h-[600px] scroll-mt-[80px] md:scroll-mt-[100px]">
             <div className="absolute inset-0">
         <Image
           src="/stepsbanner.jpg"

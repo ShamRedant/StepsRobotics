@@ -67,7 +67,7 @@ export default function ContactDetails() {
     }
   };
   return (
-    <div id="contactsection" className="contact-details mt-[80px] -mb-[20px] pt-[20px] pb-[40px] px-0">
+    <div id="contactsection" className="contact-details mt-[80px] -mb-[20px] pt-[20px] pb-[40px] px-0 scroll-mt-[80px] md:scroll-mt-[100px]">
       <div className="container-custom">
         <div className="contact-better-main mt-[45px]">
           <h2 className="contact-way-title text-3xl font-bold">

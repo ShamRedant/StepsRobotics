@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutVision() {
   return (
-    <section id="aboutsection" className="bg-white space-y-20 pt-[60px]">
+    <section id="aboutsection" className="bg-white space-y-20 pt-[60px] scroll-mt-[80px] md:scroll-mt-[100px]">
         <div className="container-custom">
            <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-2 leading-snug text-center font-[500] sm:text-left text-font-orbitron">
             About{" "}
