@@ -22,8 +22,9 @@ import Navbar from './component/Navbar';
 import Footer from './component/Footer';
 import Empower from './component/Empower';
 import Teacher from './component/Teacher';
-
-
+import Coming from './component/Coming';
+import AboutVision from './component/AboutVision';
+import ContactDetails from './component/ContactDetails';
 
 // const projects = [
 //   { image: "/Swetha.png", video: "/about/kid-1.mp4", name: "Aditi" },
@@ -131,11 +132,6 @@ export default function Home() {
   const left = data.items.filter((i) => i.side === "left").sort((a, b) => a.order_index - b.order_index);
   const right = data.items.filter((i) => i.side === "right").sort((a, b) => a.order_index - b.order_index);
   const robot = data.main?.robot_image;
-
-
-
-
-
 
   return (
     <>
@@ -268,9 +264,9 @@ export default function Home() {
             </p>
           </div>
           <div className="mr-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-auto gap-8 items-center">
-            <div className="space-y-4 lg:ml-auto">
+            <div className="space-y-4 lg:ml-auto steps-content-box-left">
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
-                <div className="bg-white  rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white  rounded-[3rem] pr-2 pl-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <h3 className="text-base steps_robotics_child_h3 md:text-lg text-font-poppins break-words text-start flex-1">
                     {left[0]?.heading}
                   </h3>
@@ -278,8 +274,8 @@ export default function Home() {
                     <Image
                       src={left[0]?.icon || "/placeholder.png"}
                       alt={left[0]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -290,7 +286,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
-                <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white rounded-[3rem] pr-2 pl-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <h3 className="text-base steps_robotics_child_h3 md:text-lg text-font-poppins break-words text-start flex-1">
                     {left[1]?.heading}
                   </h3>
@@ -298,8 +294,8 @@ export default function Home() {
                     <Image
                       src={left[1]?.icon || "/placeholder.png"}
                       alt={left[1]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -309,7 +305,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px] mt-[23px]">
-                <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white rounded-[3rem] pr-2 pl-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <h3 className="text-base steps_robotics_child_h3 md:text-lg text-font-poppins break-words text-start flex-1">
                     {left[2]?.heading}
                   </h3>
@@ -317,8 +313,8 @@ export default function Home() {
                     <Image
                       src={left[2]?.icon || "/placeholder.png"}
                       alt={left[2]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -330,8 +326,7 @@ export default function Home() {
             </div>
 <div className="flex robot_center_image justify-center items-center">
   <div className="relative">
-    <div className="relative w-100 h-100 md:w-110 ml-[30px] md:ml-0
- md:h-110">
+    <div className="relative w-100 h-100 md:w-110 ml-[30px] md:ml-0 md:h-110">
       <Image
         src={robot}
         alt={data.main?.title || "STEPS Robot"}
@@ -349,7 +344,7 @@ export default function Home() {
           absolute
           left-1/2 top-1/2
           -translate-x-1/2 -translate-y-1/2
-          w-[70%] h-[45%] -mt-[26px]
+          w-[70%] h-[50%] -mt-[26px]
           object-contain robo-anim
           z-20
           pointer-events-none
@@ -358,15 +353,15 @@ export default function Home() {
     </div>
   </div>
 </div>
-            <div className="space-y-4">
+            <div className="space-y-4 steps-content-box-right">
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
-                <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white rounded-[3rem] pl-2 pr-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <div className="flex-shrink-0">
                     <Image
                       src={right[0]?.icon || "/placeholder.png"}
                       alt={right[0]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -379,13 +374,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
-                <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white rounded-[3rem] pl-2 pr-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <div className="flex-shrink-0">
                     <Image
                       src={right[1]?.icon || "/placeholder.png"}
                       alt={right[1]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -398,13 +393,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
-                <div className="bg-white rounded-[3rem] px-6 py-4 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
+                <div className="bg-white rounded-[3rem] pl-2 pr-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
                   <div className="flex-shrink-0">
                     <Image
                       src={right[2]?.icon || "/placeholder.png"}
                       alt={right[2]?.heading || ""}
-                      width={70}
-                      height={70}
+                      width={80}
+                      height={80}
                       className="object-contain"
                     />
                   </div>
@@ -494,34 +489,24 @@ export default function Home() {
                         <ArrowRight className="w-6 h-6 text-orange-500" />
                       </div> 
                       <span className="relative bg-white rounded-full p-2"><ArrowRight className="w-6 h-6 text-black" /></span>
-
                     </button>
-
                   </div>
-
-
                 </div>
               ))}
             </div>
           </div>
-
-
-
-
-
-
         </div>
-
-
       </section > */}
 
       <Empower />
-      < CodingAdventures />
+      {/* < CodingAdventures /> */}
       < WhyChooseSection />
       < TestimonialsSection />
 <Teacher />
       < StudyProcessGallery />
-      
+      <Coming />
+      <AboutVision />
+      <ContactDetails />
     </div >
 
 

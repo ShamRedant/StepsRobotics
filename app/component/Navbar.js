@@ -238,8 +238,20 @@ const Navbar = () => {
                       <>
                         <Link
                           href={item.href}
+                           scroll={false}
+  onClick={(e) => {
+    if (item.href.startsWith("#")) {
+      e.preventDefault();
+
+      const target = document.querySelector(item.href);
+      target?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }}
                           className={`
-    relative nav-link flex items-center pb-1
+    relative nav-link flex scroll-smooth items-center pb-1
     ${
       isActive
         ? "text-yellow-500 after:w-[50%]"
@@ -247,7 +259,7 @@ const Navbar = () => {
     }
     after:absolute after:left-0 after:bottom-0
     after:h-[2px] after:bg-yellow-500 after:rounded-full
-    after:transition-all after:duration-300 after:w-0
+    after:transition-all scroll-smooth after:duration-300 after:w-0
   `}
                         >
                           {item.label}
@@ -285,6 +297,18 @@ const Navbar = () => {
                     ) : (
                       <Link
                         href={item.href}
+                         scroll={false}
+  onClick={(e) => {
+    if (item.href.startsWith("#")) {
+      e.preventDefault();
+
+      const target = document.querySelector(item.href);
+      target?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }}
                         className={`
     relative nav-link flex items-center pb-1
     ${
@@ -555,7 +579,16 @@ const Navbar = () => {
           : "border-transparent text-gray-800 hover:bg-gray-50"
       }`}
                   >
-                    <Link href="/courses" onClick={() => setIsOpen(false)}>
+                    <Link href="#coursesection"
+                    scroll={false}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    document
+      .getElementById("coursesection")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}>
                       Courses
                     </Link>
 
@@ -570,7 +603,7 @@ const Navbar = () => {
                   </button>
 
                   {/* Dropdown Items */}
-                  {openDropdown === "courses" && (
+                  {/* {openDropdown === "courses" && (
                     <div className="bg-gray-50">
                       {courses.map((course) => {
                         const isActive = pathname === `/courses/${course.id}`;
@@ -592,7 +625,7 @@ const Navbar = () => {
                         );
                       })}
                     </div>
-                  )}
+                  )} */}
                 </div>
                 {/* <Link
                   href="/programs"
@@ -602,15 +635,31 @@ const Navbar = () => {
                   Programs
                 </Link> */}
                 <Link
-                  href="/about"
-                  onClick={() => setIsOpen(false)}
+                  href="#aboutsection"
+              scroll={false}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    document
+      .getElementById("aboutsection")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}
                   className="px-6 py-4 text-gray-800 font-semibold hover:bg-yellow-50"
                 >
                   About Us
                 </Link>
                 <Link
-                  href="/contacts"
-                  onClick={() => setIsOpen(false)}
+                  href="#contactsection"
+                  scroll={false}
+  onClick={(e) => {
+    e.preventDefault();
+    setIsOpen(false);
+
+    document
+      .getElementById("contactsection")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }}
                   className="px-6 py-4 text-gray-800 font-semibold hover:bg-yellow-50"
                 >
                   Contact

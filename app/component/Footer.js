@@ -77,7 +77,7 @@ export default function Footer() {
   return (
 
     <footer className="footer relative overflow-hidden bg-white">
-      <div className="container mx-auto border-gray-200 -mb-20 relative z-10">
+      {/* <div className="container mx-auto border-gray-200 -mb-20 relative z-10">
         <div className="container-custom px-4 py-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left items-start">
             <div className="footerlogo flex flex-col items-center md:items-start">
@@ -120,12 +120,8 @@ export default function Footer() {
                 ))}
               </div>
             </div>
-
-            {/* MIDDLE COLUMN */}
             <div className="flex flex-col items-center md:items-start">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-
-                {/* Links */}
                 <div>
                   <h3 className="text-xl footer-links-title stem-gold mb-4">Links</h3>
                   <ul className="space-y-3">
@@ -141,8 +137,6 @@ export default function Footer() {
                     ))}
                   </ul>
                 </div>
-
-                {/* Let's Connect */}
                 <div>
                   <h3 className="text-xl footer-links-title stem-gold mb-6">
                     Let&apos;s Connect
@@ -169,9 +163,6 @@ export default function Footer() {
 
               </div>
             </div>
-
-
-            {/* RIGHT COLUMN */}
             <div className="flex flex-col items-center md:items-start">
               <h3 className="text-xl footer-links-title stem-gold mb-4">
                 Write to Us
@@ -188,8 +179,6 @@ export default function Footer() {
                       onChange={(e) => setEmail(e.target.value)}
                       className="w-full px-4 py-3 pr-12 border-2 border-gray-200 rounded-lg"
                     />
-
-                    {/* Anti-bot honeypot */}
                     <input type="text" className="hidden" autoComplete="off" tabIndex="-1" />
 
                     <button
@@ -237,10 +226,9 @@ export default function Footer() {
         >
           <ArrowUp className="w-6 h-6 text-black" />
         </button>
-      </div>
+      {/* </div> */} 
 
-<div className="w-full mt-20 flex flex-col sm:flex-row text-sm relative z-10">
-
+<div className="w-full flex flex-col sm:flex-row text-sm relative z-10">
   <div className="bg-[#FFD700] sm:w-[40%] w-full flex justify-end items-center h-10 sm:h-8">
 <div className="w-full max-w-[1180px] flex justify-center items-center text-center px-4">
       <div className="flex space-x-2 text-black">
@@ -271,16 +259,9 @@ export default function Footer() {
 ">
   Powered by: <span>Redant Labs</span>
 </p>
-
-
   </div>
 </div>
-
-
-
 </div>
-
-
     </footer>
   );
 }

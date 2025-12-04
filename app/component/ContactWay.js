@@ -6,10 +6,10 @@ export default function ContactWay() {
     <div className='contact-way'>
     <div className='container-custom'>
       <div className='contact-better-main mt-[45px]'>
-        <p className="contact-way-title text-3xl font-bold">
+        <h2 className="contact-way-title text-3xl font-bold">
           We are here to help you
           <span className="stem-gold contact-way-title pl-2">know us in a better way</span>
-        </p>
+        </h2>
         <p className="contact-model-title mt-3 text-gray-700 max-w-4xl">
           Whether you&apos;re a parent exploring courses for your child, a student eager to learn, a professional interested in our franchise opportunities, or someone looking to join our team of trainers, we&apos;d love to hear from you. Our team is always approachable and committed to responding promptly.
         </p>

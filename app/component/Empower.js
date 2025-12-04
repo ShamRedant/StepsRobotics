@@ -4,7 +4,7 @@ import GlobalImage from "@/public/global.svg";
 import  "./css/Empower.css";
 export default function Empower() {
   return (
-    <div className="empower pt-[40px] pb-[80px]">
+    <div className="empower pt-[40px] pb-[35px]">
     <div className="w-full container-custom">
         <div className="empower-head">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-4 leading-snug text-center font-[500] sm:text-left text-font-orbitron">
