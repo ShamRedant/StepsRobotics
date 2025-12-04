@@ -4075,6 +4075,12 @@ li {
     .banner-text h1, .every{
         font-size: 42px !important;
     }
+    .footer-copyright{
+ font-size: 10px !important;
+    }
+    .footer-powered{
+ font-size: 10px !important;
+    }
 }
 
 @media (min-width: 788px) and (max-width: 990px) {

@@ -59,7 +59,7 @@ export default function StudyProcessGallery() {
                 </motion.div>
                 {/* Header */}
                 <motion.div
-                    className="mb-8 md:mb-12 max-w-5xl relative z-10"
+                    className="mb-8 md:mb-12 container-custom relative z-10"
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
@@ -73,7 +73,7 @@ export default function StudyProcessGallery() {
                     </p>
                 </motion.div>
                 {/* Gallery Grid */}
-                <div className="relative z-10 gallery_section">
+                <div className="relative z-10 container-custom gallery_section">
                     {/* Mobile & Tablet: 2 columns */}
                     <div className="grid grid-cols-2 gap-3 md:gap-4 md:hidden">
                         {gallery.slice(0, 8).map((item, index) => (

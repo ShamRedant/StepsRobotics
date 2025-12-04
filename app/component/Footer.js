@@ -246,11 +246,11 @@ export default function Footer() {
 <div className="bg-black sm:w-[64%] w-full flex justify-start items-center h-auto py-2 sm:h-8 sm:-ml-[30px] sm:[clip-path:polygon(30px_0,100%_0,100%_100%,0_100%)]">
   <div className="w-full max-w-[1180px] flex flex-col sm:flex-row justify-start items-center text-white px-4 sm:pl-[70px] text-center sm:text-left">
     
-    <p className="text-white font-poppins text-[12px] font-normal leading-normal">
+    <p className="text-white footer-copyright font-poppins text-[12px] font-normal leading-normal">
       Copyright STEPS Robotics 2025. All rights reserved.
     </p>
 <p className="
-  text-white font-poppins text-[12px] font-normal leading-normal
+  text-white footer-powered font-poppins text-[12px] font-normal leading-normal
   mt-1
   sm:mt-0
   sm:ml-[120px]
