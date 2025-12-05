@@ -88,15 +88,16 @@ const TestimonialCard = ({ testimonial, isCenter, onClick }) => (
     >
         <BinderClip />
 
-        <div className={`mx-auto mb-5 rounded-2xl overflow-hidden ${isCenter ? 'border-white' : 'border-gray-50'}`}>
-            <Image
-                src={testimonial?.image || "/Sathish.png"}
-                alt="student image"
-                width={100}
-                height={300}
-                className="w-full h-[300px] object-contain"
-            />
-        </div>
+        <div className={`mx-auto pt-[10px] mb-5 rounded-[12px] overflow-hidden ${isCenter ? 'border-white' : 'border-gray-50'}`}>
+    <Image
+        src={testimonial?.image || "/Sathish.png"}
+        alt="student image"
+        width={100}
+        height={300}
+        className="w-full h-[300px] rounded-[12px] object-cover"
+    />
+</div>
+
 
         <h3 className="text-2xl font-semibold text-gray-800 text-center mb-2.5">
             {testimonial?.name}
