@@ -263,7 +263,7 @@ export default function Home() {
             STEPS Robotics goes beyond classrooms to bring full-spectrum robotics and STEM experiences to students, teachers, and institutions.
             </p>
           </div>
-          <div className="mr-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-auto gap-8 items-center">
+          <div className="mr-0 sm:mr-10 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 w-auto gap-8 items-center">
             <div className="space-y-4 lg:ml-auto steps-content-box-left">
               <div className="flex flex-col items-start w-full sm:max-w-[800px] lg:max-w-[330px]">
                 <div className="bg-white  rounded-[3rem] pr-2 pl-6 py-1 shadow-md flex flex-row items-center gap-3 mb-2 w-full">
@@ -326,7 +326,7 @@ export default function Home() {
             </div>
 <div className="flex robot_center_image justify-center items-center">
   <div className="relative">
-    <div className="relative w-100 h-100 md:w-110 ml-[30px] md:ml-0 md:h-110">
+    <div className="relative w-100 h-100 md:w-110 ml-[0px] sm:ml-[30px] md:h-110">
       <Image
         src={robot}
         alt={data.main?.title || "STEPS Robot"}

@@ -67,7 +67,10 @@ export default function ContactDetails() {
     }
   };
   return (
-    <div id="contactsection" className="contact-details mt-[80px] -mb-[20px] pt-[20px] pb-[40px] px-0 scroll-mt-[80px] md:scroll-mt-[100px]">
+    <div
+      id="contactsection"
+      className="contact-details mt-[80px] -mb-[20px] pt-[20px] pb-[40px] px-0 scroll-mt-[80px] md:scroll-mt-[100px]"
+    >
       <div className="container-custom">
         <div className="contact-better-main mt-[45px]">
           <h2 className="contact-way-title text-3xl font-bold">
@@ -85,9 +88,9 @@ export default function ContactDetails() {
 
         <div className="bg-white mt-[40px] mb-[70px] rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-[45%_55%] gap-0">
-            <div className="get-in-touch-image flex items-center !rounded-[0_30px_30px_0] justify-center bg-[#eaeaea]">
-              <div className="w-full max-w-md bg-[#eaeaea] !rounded-[0_30px_30px_0]  py-8 space-y-6">
-                <div className="flex items-start gap-4">
+            <div className="get-in-touch-image flex items-center !rounded-[0_30px_30px_0] justify-center">
+              <div className="w-full max-w-md get-box !rounded-[0_30px_30px_0]  py-8 space-y-6">
+                <div className="flex items-start gap-4 sm:px-[0px] px-[14px]">
                   <div className="bg-[#FFD02B] shadow-[inset_3px_1px_3.9px_0_rgba(0,0,0,0.37)] w-[60px] h-[57px] rounded-2xl flex items-center justify-center">
                     <MapPin className="w-8 h-8 text-gray-800" />
                   </div>
@@ -100,9 +103,21 @@ export default function ContactDetails() {
                     </p>
                   </div>
                 </div>
-
-                <hr className="mt-3 border-t-2 border-hr-breadcrumb border-dashed border-yellow-400" />
-                <div className="flex items-start gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="453"
+                  height="1"
+                  viewBox="0 0 453 1"
+                  fill="none"
+                >
+                  <path
+                    d="M0 0.5H453"
+                    stroke="#828282"
+                    strokeOpacity="0.76"
+                    strokeDasharray="3 3"
+                  />
+                </svg>{" "}
+                <div className="flex items-start gap-4 sm:px-[0px] px-[14px]">
                   <div className="bg-[#FFD02B] shadow-[inset_3px_1px_3.9px_0_rgba(0,0,0,0.37)] w-[60px] h-[57px] rounded-2xl flex items-center justify-center">
                     <Phone className="w-8 h-8 text-gray-800" />
                   </div>
@@ -112,10 +127,21 @@ export default function ContactDetails() {
                     <p className="text-sm text-gray-600">044 223344567</p>
                   </div>
                 </div>
-
-                <hr className="mt-3 border-t-2 border-hr-breadcrumb border-dashed border-yellow-400" />
-                {/* Email */}
-                <div className="flex items-start gap-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="453"
+                  height="1"
+                  viewBox="0 0 453 1"
+                  fill="none"
+                >
+                  <path
+                    d="M0 0.5H453"
+                    stroke="#828282"
+                    strokeOpacity="0.76"
+                    strokeDasharray="3 3"
+                  />
+                </svg>{" "}
+                <div className="flex items-start gap-4 sm:px-[0px] px-[14px]">
                   <div className="bg-[#FFD02B] shadow-[inset_3px_1px_3.9px_0_rgba(0,0,0,0.37)] w-[60px] h-[57px] rounded-2xl flex items-center justify-center">
                     <Mail className="w-8 h-8 text-gray-700" />
                   </div>
@@ -129,7 +155,6 @@ export default function ContactDetails() {
                     </p>
                   </div>
                 </div>
-
                 <div className="flex justify-center gap-6 pt-4">
                   {/* <div className="bg-red-500 w-12 h-12 rounded-lg flex items-center justify-center text-white">
                     📞
@@ -140,29 +165,28 @@ export default function ContactDetails() {
                   <div className="bg-blue-400 w-12 h-12 rounded-lg flex items-center justify-center text-black">
                     @
                   </div> */}
-                   <Image
-                              src="/contact_icon.png"
-                              alt="icons-contacr"
-                              width={420}
-                              height={265}
-                              className="w-full h-[115px] object-contain"
-                              priority
-                            />
+                  <Image
+                    src="/contact_icon.png"
+                    alt="icons-contacr"
+                    width={420}
+                    height={265}
+                    className="w-full h-[115px] object-contain"
+                    priority
+                  />
                 </div>
               </div>
             </div>
 
             <div className="pt-[35px] pb-[18px] px-[45px] get-in-touch-form">
-              <h2 className="text-4xl get-in-touch-title font-bold mb-4">
+              <h2 className="text-4xl get-in-title !font-oxanium font-bold mb-4">
                 Get In Touch
               </h2>
-              <p className="get-in-touch-subtitle mb-2 leading-relaxed">
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page randomised words which
-                don&apos;t look even slightly when looking at its layout.
+              <p className="get-in-touch-subtitle mt-3 mb-2 leading-relaxed">
+                Share your requirements and our experts will contact you
+                promptly
               </p>
 
-              <div className="space-y-6">
+              <div className="space-y-6 mt-[30px]">
                 <div className="grid sm:grid-cols-2 gap-4 mt-[20px] !mb-[5px]">
                   <div className="relative -mb-[15px]">
                     <input
@@ -172,7 +196,7 @@ export default function ContactDetails() {
                       value={formData.firstName}
                       onChange={handleChange}
                       placeholder="First Name"
-                      className={`peer w-full px-4 py-2 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
+                      className={`peer w-full px-4 py-3 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
                         errors.firstName ? "border-red-500" : "border-gray-300"
                       }`}
                     />
@@ -186,7 +210,9 @@ export default function ContactDetails() {
                     </label>
                     <p
                       className={`text-red-500 text-sm mt-1 min-h-[20px] ${
-                        errors.firstName ? "m-[10px] !mt-[10px] !mb-[20px]" : "m-0"
+                        errors.firstName
+                          ? "m-[10px] !mt-[10px] !mb-[20px]"
+                          : "m-0"
                       }`}
                     >
                       {errors.firstName || ""}
@@ -201,7 +227,7 @@ export default function ContactDetails() {
                       value={formData.lastName}
                       onChange={handleChange}
                       placeholder="Last Name"
-                      className="peer w-full px-4 py-2 border border-gray-300 rounded-lg contact-field-placeholder placeholder:[contact-field-placeholder] focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent"
+                      className="peer w-full px-4 py-3 border border-gray-300 rounded-lg contact-field-placeholder placeholder:[contact-field-placeholder] focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent"
                     />
                     <label
                       htmlFor="lastName"
@@ -226,7 +252,7 @@ export default function ContactDetails() {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="yourmail@gmail.com"
-                      className={`peer w-full px-4 py-2 pr-12 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
+                      className={`peer w-full px-4 py-3 pr-12 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
                         errors.email ? "border-red-500" : "border-gray-300"
                       }`}
                     />
@@ -258,7 +284,7 @@ export default function ContactDetails() {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+91 9787616940"
-                      className={`peer w-full px-4 py-2 pr-12 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
+                      className={`peer w-full px-4 py-3 pr-12 border rounded-lg contact-field-placeholder focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent ${
                         errors.phone ? "border-red-500" : "border-gray-300"
                       }`}
                     />
@@ -289,7 +315,7 @@ export default function ContactDetails() {
                     onChange={handleChange}
                     rows="6"
                     placeholder="Your message"
-                    className="peer w-full px-4 py-2 border border-gray-300 contact-field-placeholder rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent resize-none"
+                    className="peer w-full px-4 py-3 border border-gray-300 contact-field-placeholder rounded-lg placeholder-transparent focus:outline-none focus:ring-2 focus:ring-orange-400 focus:border-transparent resize-none"
                   ></textarea>
                   <label
                     htmlFor="message"

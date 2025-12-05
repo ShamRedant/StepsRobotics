@@ -7,11 +7,13 @@ import Enquiry from "./Enquiry";
 import SkeletonHero from "./SkeletonHero";
 
 const rightImages = [
-  "/home_banner/go.png",
   "/home_banner/123.png",
   "/home_banner/aim.png",
+  "/home_banner/go.png",
   "/home_banner/iq.png",
   "/home_banner/v5.png",
+  "/home_banner/cte.png",
+
 ];
 
 const infoCards = [
@@ -59,7 +61,7 @@ export default function Carousel() {
 
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % banners.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [banners]);
@@ -145,7 +147,7 @@ export default function Carousel() {
               {infoCards.map((card, index) => (
                 <div
                   key={index}
-                  className="p-3 flex items-center justify-center gap-4"
+                  className="p-0 sm:p-3 flex items-center justify-center gap-4"
                 >
                   <div className="w-12 h-12 relative">
                     <Image

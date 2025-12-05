@@ -861,7 +861,7 @@ padding-left: 19px;
   font-family: var(--font-poppins), sans-serif;
   font-size: 12px;
   font-weight: 400;
-  color: #000 !important;
+  color: #6C727F !important;
 }
 
 
@@ -4093,4 +4093,18 @@ li {
     .banner-text p{
             font-size: 14px !important;
     }
+}
+
+
+.get-in-touch-image{
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.54) 1.9%, rgba(235, 235, 235, 0.54) 100%);
+	border-radius: 30px 51px !important;
+	height: 600px;
+}
+
+.get-in-title {
+  font-family: var(--font-oxanium), sans-serif;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
 }

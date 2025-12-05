@@ -7,8 +7,6 @@ export default function TestimonialsSection() {
     const [testimonials, setTestimonials] = useState([]);
     const [activeIndex, setActiveIndex] = useState(1);
     const [mobileIndex, setMobileIndex] = useState(0);
-
-    // ✅ Fetch testimonials
     useEffect(() => {
         async function fetchTestimonials() {
             try {
@@ -22,8 +20,6 @@ export default function TestimonialsSection() {
         }
         fetchTestimonials();
     }, []);
-
-    // ✅ Auto scroll for mobile
     useEffect(() => {
         const interval = setInterval(() => {
             setMobileIndex((prev) => (prev + 1) % testimonials.length);
@@ -82,34 +78,37 @@ export default function TestimonialsSection() {
         </div>
     );
 
-    const TestimonialCard = ({ testimonial, isCenter, onClick }) => (
-        <div
-            onClick={onClick}
-            className={`relative testimonial rounded-2xl p-5 w-80 shadow-xl transition-all duration-500 cursor-pointer ${isCenter
-                ? 'bg-[#f5b800] scale-90 z-20 hover:-translate-y-3 mt-30'
-                : 'bg-gray-100 scale-90 opacity-100 hover:opacity-100 hover:scale-95 z-10'
-                }`}
-        >
-            <BinderClip />
-            <div className={` mx-auto mb-5 rounded-2xl overflow-hidden ${isCenter ? 'border-white' : 'border-gray-50'
-                }`}>
-                <Image
-                    src={testimonials?.image || "/Sathish.png"}
-                    alt="student image"
-                    width={100}
-                    height={100}
-                    className="w-full h-full object-cover"
-                />
-            </div>
-            <h3 className="text-2xl testmonials font-semibold text-gray-800 text-center mb-2.5">
-                {testimonial?.name}
-            </h3>
-            <StarRating rating={testimonial?.rating} center={isCenter} />
-            <p className={`text-center testmonials text-sm ${isCenter ? 'text-gray-800 font-medium' : 'text-gray-600'}`}>
-                {testimonial?.role}
-            </p>
+const TestimonialCard = ({ testimonial, isCenter, onClick }) => (
+    <div
+        onClick={onClick}
+        className={`relative testimonial rounded-2xl p-5 w-80 shadow-xl transition-all duration-500 cursor-pointer ${
+            isCenter ? 'bg-[#f5b800] scale-90 z-20 hover:-translate-y-3 mt-30'
+                     : 'bg-gray-100 scale-90 opacity-100 hover:opacity-100 hover:scale-95 z-10'
+        }`}
+    >
+        <BinderClip />
+
+        <div className={`mx-auto mb-5 rounded-2xl overflow-hidden ${isCenter ? 'border-white' : 'border-gray-50'}`}>
+            <Image
+                src={testimonial?.image || "/Sathish.png"}
+                alt="student image"
+                width={100}
+                height={300}
+                className="w-full h-[300px] object-contain"
+            />
         </div>
-    );
+
+        <h3 className="text-2xl font-semibold text-gray-800 text-center mb-2.5">
+            {testimonial?.name}
+        </h3>
+
+        <StarRating rating={testimonial?.rating} center={isCenter} />
+
+        <p className={`text-center text-sm ${isCenter ? 'text-gray-800 font-medium' : 'text-gray-600'}`}>
+            {testimonial?.role}
+        </p>
+    </div>
+);
 
     return (
         <div
@@ -122,7 +121,6 @@ export default function TestimonialsSection() {
             }}
         >
             <div className="max-w-7xl mx-auto container-custom">
-                {/* Header */}
                 <div className="mb-4 mt-12">
                     <h2 className="text-3xl sm:text-3xl font-[500] lg:text-4xl mb-4 leading-snug text-center sm:text-left text-font-orbitron text-yellow-400">
                         STEPS Robotics <span className="text-black text-font-orbitron">Talks</span>
@@ -131,10 +129,6 @@ export default function TestimonialsSection() {
                         What Parent & Teachers Say About Us
                     </p>
                 </div>
-
-
-                {/* Desktop Layout */}
-                {/* Cards */}
                 <div className="hidden md:flex relative justify-center items-center gap-8 mb-10 lg:flex-nowrap">
                     {cardOrder.map((testimonialIndex, position) => (
                         <div key={testimonials[testimonialIndex].id} className="relative">

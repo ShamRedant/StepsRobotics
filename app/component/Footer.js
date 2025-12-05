@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { footer } from "../utils/fetchData";
 import { getNavbarData } from "../utils/menuItems";
+import Link from "next/link";
 
 export default function Footer() {
 
@@ -257,7 +258,7 @@ export default function Footer() {
   md:ml-[220px]
   lg:ml-[306px]
 ">
-  Powered by: <span>Redant Labs</span>
+  Powered by: <Link href="https://redantlabs.io/" className="text-[#FCD508]">Redant Labs</Link>
 </p>
   </div>
 </div>

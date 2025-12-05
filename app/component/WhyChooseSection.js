@@ -23,7 +23,7 @@ export default function WhyChooseSection() {
   return (
     <section className='explore_learning px-4 pt-15' 
     style={{ 
-      backgroundImage: "url('/why_choose_STEPS.jpg')", 
+      backgroundImage: "url('/choose-bg-box.jpg')", 
       backgroundRepeat: "no-repeat", 
       backgroundSize: "cover",
       backgroundPosition: "center",
