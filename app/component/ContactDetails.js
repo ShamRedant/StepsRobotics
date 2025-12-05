@@ -85,8 +85,7 @@ export default function ContactDetails() {
             committed to responding promptly.
           </p>
         </div>
-
-        <div className="bg-white mt-[40px] mb-[70px] rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-white mt-[40px] mb-[70px] rounded-3xl shadow-2xl overflow-y-scroll">
           <div className="grid lg:grid-cols-[45%_55%] gap-0">
             <div className="get-in-touch-image flex items-center !rounded-[0_30px_30px_0] justify-center">
               <div className="w-full max-w-md get-box !rounded-[0_30px_30px_0]  py-8 space-y-6">
@@ -105,7 +104,7 @@ export default function ContactDetails() {
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="453"
+                  width="100%"
                   height="1"
                   viewBox="0 0 453 1"
                   fill="none"
@@ -129,7 +128,7 @@ export default function ContactDetails() {
                 </div>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="453"
+                  width="100%"
                   height="1"
                   viewBox="0 0 453 1"
                   fill="none"
